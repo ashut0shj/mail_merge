@@ -53,11 +53,64 @@ You can add placeholders in your Gmail draft for **dynamic content**:
 
 ### 📧 Example Draft Email:  
 
+
+
+
+## 📄 Example Google Sheet  
+
+<table>  
+  <thead>  
+    <tr>  
+      <th>Recipient</th>  
+      <th>Name</th>  
+      <th>Date</th>  
+      <th>Time</th>  
+      <th>MeetingLink</th>  
+      <th>CC Recipients</th>  
+      <th>Email Sent</th>  
+    </tr>  
+  </thead>  
+  <tbody>  
+    <tr>  
+      <td>user1@example.com</td>  
+      <td>Alice</td>  
+      <td>12th Feb</td>  
+      <td>3 PM</td>  
+      <td><a href="http://meet.com/alice">Meeting Link</a></td>  
+      <td>cc1@example.com</td>  
+      <td></td>  
+    </tr>  
+    <tr>  
+      <td>user2@example.com</td>  
+      <td>Bob</td>  
+      <td>13th Feb</td>  
+      <td>4 PM</td>  
+      <td><a href="http://meet.com/bob">Meeting Link</a></td>  
+      <td>cc2@example.com</td>  
+      <td></td>  
+    </tr>  
+    <tr>  
+      <td>user3@example.com</td>  
+      <td>Charlie</td>  
+      <td>14th Feb</td>  
+      <td>5 PM</td>  
+      <td><a href="http://meet.com/charlie">Meeting Link</a></td>  
+      <td>cc3@example.com</td>  
+      <td></td>  
+    </tr>  
+  </tbody>  
+</table>  
+
+📌 **Placeholders** like `{{Name}}`, `{{Date}}`, and `{{MeetingLink}}` are automatically replaced with values from the sheet.  
+
+#### **Body:**  
 ```html
 Hello {{Name}},  
 
-Your meeting is scheduled on {{Date}}.  
-Click [here]({{MeetingLink}}) to join.  
+Your meeting is scheduled on **{{Date}}** at **{{Time}}**.  
+Click <a href="{{MeetingLink}}">here</a> to join.  
+
+Looking forward to your participation!  
 
 Best,  
 Team
