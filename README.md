@@ -4,18 +4,18 @@ This script automates sending personalized emails using **Google Sheets and Gmai
 
 ---
 
-## ✨ Features  
+## Features  
 
-- ✅ **Automated Email Sending** – Sends emails based on data in Google Sheets.  
-- ✅ **Personalized Emails** – Supports placeholders for dynamic content.  
-- ✅ **CC Support** – Adds multiple CC recipients.  
-- ✅ **Email Status Tracking** – Logs sent emails to avoid duplicates.  
-- ✅ **Inline Images & Attachments** – Preserves Gmail draft formatting.  
-- ✅ **Customizable Subject Line** – Uses a draft with a matching subject.  
+- **Automated Email Sending** – Sends emails based on data in Google Sheets.  
+- **Personalized Emails** – Supports placeholders for dynamic content.  
+- **CC Support** – Adds multiple CC recipients.  
+- **Email Status Tracking** – Logs sent emails to avoid duplicates.  
+- **Inline Images & Attachments** – Preserves Gmail draft formatting.  
+- **Customizable Subject Line** – Uses a draft with a matching subject.  
 
 ---
 
-## 📌 Use Cases
+## Use Cases
 
 This Google Apps Script allows for automated bulk email sending using Gmail and Google Sheets. It can be useful in various scenarios, including:
 
@@ -31,20 +31,20 @@ Simply modify the Google Sheet with recipient details, draft a Gmail message wit
 
 ---
 
-## 📌 How It Works  
+## How It Works  
 
-### 1️⃣ Store your email data in Google Sheets  
+### 1. Store your email data in Google Sheets  
 - The sheet should have at least these columns:  
   - **Recipient** (Email ID)  
   - **CC Recipients** (Optional)  
   - **Email Sent** (To track sent emails)  
 - Add any **custom placeholders** you need, like `{{Name}}`, `{{Date}}`, etc.  
 
-### 2️⃣ Prepare a Gmail draft  
+### 2. Prepare a Gmail draft  
 - Use **placeholders** in the subject/body like `{{Name}}` or `{{MeetingLink}}`.  
 - **Include attachments and inline images** if needed.  
 
-### 3️⃣ Run the script  
+### 3. Run the script  
 - Select **"Mail Merge" → "Send Emails"** from the menu.  
 - The script will:  
   - Fetch data from the sheet  
@@ -63,11 +63,11 @@ Simply modify the Google Sheet with recipient details, draft a Gmail message wit
 
 ---
 
-## 📨 Using Placeholders in Emails  
+## Using Placeholders in Emails  
 
 You can add placeholders in your Gmail draft for **dynamic content**:  
 
-### 📧 Example Draft Email:  
+### Example Draft Email:  
 
 
 
@@ -117,7 +117,7 @@ You can add placeholders in your Gmail draft for **dynamic content**:
   </tbody>  
 </table>  
 
-📌 **Placeholders** like `{{Name}}`, `{{Date}}`, and `{{MeetingLink}}` are automatically replaced with values from the sheet.  
+**Placeholders** like `{{Name}}`, `{{Date}}`, and `{{MeetingLink}}` are automatically replaced with values from the sheet.  
 
 #### **Body:**  
 ```html
@@ -130,3 +130,6 @@ Looking forward to your participation!
 
 Best,  
 Team
+
+
+
