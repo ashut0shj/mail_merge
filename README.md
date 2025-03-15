@@ -19,13 +19,13 @@ This script automates sending personalized emails using **Google Sheets and Gmai
 
 This Google Apps Script allows for automated bulk email sending using Gmail and Google Sheets. It can be useful in various scenarios, including:
 
-- **Bulk Mailing**: Send personalized emails to multiple recipients with dynamic content.
-- **Newsletters**: Automate weekly/monthly newsletters with recipient-specific details.
-- **Event Invitations**: Send meeting invites with unique links, names, and times.
-- **Follow-up Emails**: Automate follow-ups for different teams based on a response sheet.
-- **HR Announcements**: Notify employees with custom salary slips, promotions, or notices.
-- **Student/Alumni Communication**: Send exam notifications, results, or alumni meet invites.
-- **Marketing Campaigns**: Personalize outreach campaigns with unique links and offers.
+- **Bulk Mailing**
+- **Newsletters**
+- **Event Invitations**
+- **Follow-up Emails**
+- **HR Announcements**
+- **Student/Alumni Communication**
+- **Marketing Campaigns**
 
 Simply modify the Google Sheet with recipient details, draft a Gmail message with placeholders, and let the script handle the rest!
 
@@ -35,9 +35,9 @@ Simply modify the Google Sheet with recipient details, draft a Gmail message wit
 
 ### 1️⃣ Store your email data in Google Sheets  
 - The sheet should have at least these columns:  
-  - **"Recipient"** (Email ID)  
-  - **"CC Recipients"** (Optional)  
-  - **"Email Sent"** (To track sent emails)  
+  - **Recipient** (Email ID)  
+  - **CC Recipients** (Optional)  
+  - **Email Sent** (To track sent emails)  
 - Add any **custom placeholders** you need, like `{{Name}}`, `{{Date}}`, etc.  
 
 ### 2️⃣ Prepare a Gmail draft  
